@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 다중 열</title>
+    <style>
+        body{
+            width: 70%;
+            border: 1px solid red;
+            color: orange;
+        }
+        div.outbox{
+            width: 100%;
+            border: 2px dotted blue;
+            /*body 안에 다 들어가기위해서 적용 -> width 값을 충분하게 주고*/
+            /* overflow: auto; */
+        
+        }
+        div.inbox{
+            width: 150px;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>맛 있는 요리 일러스트</h1>
+    <div class="outbox">
+        <div class="inbox"><img src="images/food.jpeg" width="150">음식</div>
+        <div class="inbox"><img src="images/food2.jpeg" width="150"></div>
+        <div class="inbox"><img src="images/food3.jpeg" width="150"></div>
+    </div>
+    <div><figure><img class="inbox" src="images/food.jpeg" width="150">음식</figure></div>
+</body>
+</html>

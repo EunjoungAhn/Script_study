@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css개요-선택자종류</title>
+    <style>
+        *{ /* 전체 대상 적용 */
+            color: blue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            padding: 20px;
+            background-color: lightgrey;
+        }
+        div.wrapper { /* 클래스 적용 */
+            background-color: gold;
+        }
+        a {
+            color: darkblue;
+            font-size: large;
+        }
+        #logo { /* 아이디 적용시 #으로 호출 */
+            background-color: darkmagenta;
+        }
+        ul > li { /* 하위 적용 */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1><a href="#"> 
+            <div id="logo"><img src="images/logo.jpg" alt="로고"></div>
+        </a></h1>
+
+        <ul class="menu">
+            <li><a href="#">소개</a></li>
+            <li><a href="#">게시판</a></li>
+            <li><a href="#">연락처</a></li>
+            <li><a href="#">소개</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 검색창</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2" bgcolor="skyblue">도서명</td>
+            <td colspan=""><input type="text" name="bname" size="45"></td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">출판사명</td>
+            <td colspan="15"><input type="text" name="pubname" size="45"></td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">발행연도</td>
+            <td colspan="2">
+                <select name="byear">
+                     <option value="">2001</option>
+                     <option value="">2002</option>
+                     <option value="">2003</option>
+                     <option value="">2004</option>
+                </select>
+            </td>
+            <td colspan="1" bgcolor="skyblue">저자암호</td>
+            <td><input type="text" name="pubname" size="15"></td>
+            
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">도서이미지</td>
+            <td colspan="2"></td>
+            <td colspan="2" ><input type="file" name="bimg"></td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">관련검색단어</td>
+            <td colspan="6">
+                <input type="checkbox" name="rebook">웹표준
+                <input type="checkbox" name="rebook">에이작스
+                <input type="checkbox" name="rebook">자바스크립트
+                <input type="checkbox" name="rebook">HTML
+                <input type="checkbox" name="rebook">MySQL
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">보관 도서관</td>
+            <td colspan="6">
+            <input type="radio" name="savbook">도서관1
+            <input type="radio" name="savbook">도서관2
+            <input type="radio" name="savbook">도서관3
+            <input type="radio" name="savbook">도서관4
+            <input type="radio" name="savbook">도서관5
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="" bgcolor="skyblue">관련 제목</td>
+            <td>
+                <textarea name="text"cols="15" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" bgcolor="skyblue">설명</td>
+            <td>
+                <textarea name="text"cols="50" rows="5"></textarea>
+            </td>
+        </tr>              
+    </table>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="검색하기">
+                <input type="reset" value="취소하기">
+                <input type="button" value="목록보기">
+</body>
+</html>

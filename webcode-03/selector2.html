@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css개요-선택자2</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+        body {
+            background-color: lightblue;
+        }
+        #header {
+            background-color: lightcoral;
+        }
+        #body {
+            background-color: purple;
+        }
+        #foot {
+            background-color: coral;
+        }
+        h1 {
+            font-size: medium;
+            color: darkgray;
+        }
+        div.main {
+            padding: 15px;
+        }
+        a {
+            background-color: limegreen;
+        }
+    </style>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <h1>로고글자</h1>
+            <ul>
+                <li> <a href="">홈</a></li>
+                <li><a href="">소개</a></li>
+                <li>자유게시판</li>
+                <li id="menu">메뉴</li>
+            </ul>
+        </div>
+
+        <div id="body">
+            <img src="images/lemon-posset.jpg" alt="">
+            <img src="images/roasted-brussel-sprouts.jpg" alt="">
+            <img src="images/zucchini-cake.jpg" alt="">
+        </div>
+        
+        <div id="foot">
+            <address>&copywrite My Cook Site</address>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css개요-텍스트개요</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /* 폰트 변경 */
+            font-size: 16px; /* 기본 사이즈 16px, 요즘 추세로는 1.0em = 1.0rem = 16px 이다. */
+        }
+        #sun{
+            font-weight: bold;
+        }
+        p.wr2:first-letter{ /* 태그 연관된 요서에 적용가능 (id는 적용안됨) */
+            font-size: 200%;
+        }
+        span.sunflower{
+            font-weight: bold; /* 굵게 */
+            font-style: italic; /* 기울기 */
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration: blink; /*blink 크롬에서는 잘 사용 안함*/
+            text-indent: -70px; /*마이너스를 적용해서 밀 수 있다.*/
+        }
+        a{
+            text-decoration: none; /* 하이퍼 링크 제거*/
+        }
+        a:link{/* 링크를 방문후 보여지는 색*/
+            color:pink;
+        }
+        a:visited{/* 링크를 방문하기전 보여지는 색*/
+            color: black;
+        }
+        a.middle:hover{/* hover은 마우스를 올렸을때 반응하는 */
+            background-color: greenyellow;
+        }
+        h1{
+            line-height: 70px;
+            text-decoration: line-through;
+            letter-spacing: 1.1rem; /* 글자 간격 */
+            text-indent: 20px; /*들여쓰기*/
+        }
+        h1:first-letter{/* 첫번째 글자를 다른 값으로 지정할 수 있다.  */
+            font-size: 200%;
+        }
+        p{
+            line-height: 1.5em; /* 행과 행 사이의 줄 간격 */
+            /*word-spacing: 1.5em;*/
+        }
+        p.wr {
+            color: blue;
+            text-align: center; /* 글자 정렬-가운데 */
+            font-weight: bold;
+        }
+        p.wr1{
+            text-align: right;
+        }
+        img {
+            vertical-align: middle; /* p, h, div 태그에서는 사용 안함.*/
+        }
+        p[class]{/* p태그 중 class가 적용된 모든 태그에 적용 */
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>여러가지 식물들 소개</h1>
+    <p>다양한 식물들을 소개하며 css 스타일을 적용하는 연습을 해봄</p>
+    <img src="images/sun.jpg" width="150">
+    <h2>sunflower</h2>
+    <p><span id="sun">해바라기</span>(영어: <span class="sunflower">Helianthus</span> 또는
+         <span class="sunflower">sunflower</span>)는 국화과에 속하는 일년생 식물로,
+         꽃은 두상화(頭狀花)이다. 한자로 규곽(葵藿), 규화(葵花), 향일화(向日花)라고 하며 
+         해바라기속에 속하는 다른 여러해살이풀도 보통 해바라기라 부른다.
+
+        <a class="middle" href="s">중앙아메리카</a>가 원산지로 16세기에 유럽에서 도입되었으며 한국에서는 
+        관상용으로 많이 기르는 한해살이풀이다. 해바라기가 속하는 해바라기속 식물은 약 60종 이상이 있다. 
+        꽃이 태양이 있는 방향으로 향하는 성질(<a href="">굴광성</a>)이 있다. ‘꽃이 항상 해를 향한다’는 뜻이 있지만,
+         해바라기는 어린 시기에만 햇빛을 따라서 동서로 움직이며 꽃이 피고 나면 줄기가 굵어져서 몸을 돌리는 일이 없다.
+          영양번식은 가능하다고만 알려져 있을 뿐 자세히 알려져 있진 않다.</p>
+
+          <p class="wr">홍길동 동해 번쩍 서해 번쩍</p>
+          <p class="wr1">동해</p><p class= wr2>서해</p>
+          
+</body>
+</html>

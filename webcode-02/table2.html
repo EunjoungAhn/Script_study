@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTX 열차 시간표</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h5>KTX 열차 시간표</h5><!--tr은 '열' , td는 '행' , th 는'머리글'-->
+    <table border="1"><!--colspan 은 열(가로)을 병합, rowspan 은 행(세로)을 병합-->
+            <tr>
+                <th colspan="2" >열차번호</th>
+                <th colspan="2">출발</th>
+                <th colspan="2">도착</th>
+                <th colspan="4">특실</th>
+                <th colspan="2">일반실</th>
+                <th colspan="">소요시간</th>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2">175</th>
+                <td colspan="2">서울</td>
+                <td colspan="2">부산</td>
+                <td colspan="4" rowspan="2" bgcolor="orange">매진</td>
+                <td colspan="" rowspan="2" bgcolor="orange">매진</td>
+                <td colspan="">2:20</td>
+            </tr>
+            <tr>
+                <td colspan="2">10:10</td>
+                <td colspan="2">12:30</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2">176</th>
+                <td colspan="2">서울</td>
+                <td colspan="2">부산</td>
+                <td colspan="4" rowspan="2" bgcolor="orange">매진</td>
+                <td colspan="" rowspan="2" bgcolor="green">예약하기</td>
+                <td colspan="">2:20</td>
+            </tr>
+            <tr>
+                <td colspan="2">10:20</td>
+                <td colspan="2">12:40</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2"> 177</th>
+                <td colspan="2">서울</td>
+                <td colspan="2">부산</td>
+                <td colspan="4" rowspan="2" bgcolor="orange">매진</td>
+                <td colspan="" rowspan="2" bgcolor="green">예약하기</td>
+                <td colspan="">2:20</td>
+            </tr>
+            <tr>
+                <td colspan="2">10:20</td>
+                <td colspan="2">12:40</td>
+            </tr>
+            
+ 
+    </table>
+</body>
+</html>

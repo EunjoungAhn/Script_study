@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무지개</title>
+    <style>
+        p{
+            padding: 50px;
+            margin: 0px;
+        }
+        p.red{
+            background-color: red;
+            padding-left: 10px;
+        }
+        p.orange{
+            background-color: orange;
+            padding-left: 10px;
+        }
+        p.yellow{
+            background-color: yellow;
+            padding-left: 10px;
+        }
+        p.green{
+            background-color: green;
+            padding-left: 10px;
+        }
+        p.blue{
+            background-color: blue;
+            padding-left: 10px;
+        }
+        p.purple{background-color: purple;
+            padding-left: 10px;
+        }
+        span{/*다른 방법의 무지개 만드는 법*/
+            background-color: green;
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+        }
+        #r1{
+            background-color: red;
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h5>무지개 색상</h5> 
+    <h4>테이블 사용</h4>
+    <table>
+        <tr>
+            <td><p class="red"></p></td>
+            <td><p class="orange"></p></td>
+            <td><p class="yellow"></p></td>
+            <td><p class="green"></p></td>
+            <td><p class="blue"></p></td>
+            <td><p class="purple"></p></td>
+        </tr>
+    </table>
+
+<!--다른 방법의 무지개 만드는 법-->
+<h4>span 사용</h4>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+<h4>iframe 사용</h4>
+    <iframe id="r1"></iframe>
+</body>
+</html>
