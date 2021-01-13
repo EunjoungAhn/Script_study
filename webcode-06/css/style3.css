@@ -1,0 +1,68 @@
+body{
+    background-color: #cecece;
+    font-family: Arial, sans-serif, Verdana;
+    font-size: 12px;
+}
+#contents{
+    width: 960px; /*min-width 도 가능 / 80% */
+    margin: 15px auto;
+    background-color: #fafafa;
+}
+/* 로고 */
+#logo{
+    font-size: 24px;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 32px;
+    background-color: #4497f6;
+    border: 2px solid white ;
+    color: white;
+}
+/* 메뉴 */
+#nav {
+    background-color: black;
+    height: 38px;
+}
+ul.menu{
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+ul.menu li {
+    /*inline을 주면 블록 속성을 잃어버려서 float 과 차이가 있는 것이다.*/
+    /* display: inline;  */
+    float: left;/* 으로 줄 수 있다.*/
+    padding: 9px 10px;
+    border-right: 1px solid grey;
+    margin: 0px;
+}
+ul.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.menu a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+/* 메인 */
+#center {
+    padding: 10px;
+}
+/* 공통 - 타이포 - 단순 - 작업많아짐 */
+h1 {
+    margin: 8px 8px 16px 0px;
+}
+p {
+    margin: 5px 8px 16px 24px;
+}
+
+/* 하단 */
+#pied {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding: 10px;
+    color: blue;
+    font-style: italic;
+}

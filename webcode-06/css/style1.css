@@ -1,0 +1,43 @@
+body{
+    background-color: #efefef;
+    font-size: 80%;
+    letter-spacing: 0.15rem;
+}
+#page{
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 4px double black;
+    background-color: #ffffff;
+}
+#logo{
+    width: 150px;
+    margin: 10px auto 25px auto;
+}
+ul{
+    width: 750px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 15px;
+    margin: 0px auto 0px auto; /*가운데 센터 잡기 위해*/
+    text-align: center;
+}
+li{
+    display: inline;
+    margin:  0px 3px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 18px;
+}
+a:hover{
+    color: #cc3333;
+    background-color: #ffffff;
+}
+p{
+    text-align: center;
+    width: 600px;
+    margin: 20px auto 20px auto;
+    /* font-weight: normal; */
+}

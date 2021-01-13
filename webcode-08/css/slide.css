@@ -1,0 +1,18 @@
+        /* 슬라이드 이미지 css */
+        div.slideshow{/*부모 박스*/
+            position: relative;
+        }
+        a.prev, a.next{
+            position: absolute; /*부모의 자표를 기준으로 이동한다.*/
+            top: 50%;
+            color: white;
+            padding: 20px;
+            margin-top: -20px;
+            font-weight: bold;
+        }
+        a.next{
+            right:1504px;
+        }
+        a.prev:hover, a.next:hover{
+            background-color: black;
+        }

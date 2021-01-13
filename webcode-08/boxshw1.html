@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 10px solid gray;
+            width: 350px;
+            margin: 30px;
+        }
+        div.red{
+            box-shadow: 5px 5px red;
+        }
+        div.blur{
+            box-shadow:  10px 10px 10px blue;
+        }
+        div.multi{
+            box-shadow: 20px 20px 5px green, 
+            0px 0px 25px blueviolet, 
+            /*여러개를 적을 수도 있음*/
+            -20px -20px 5pxz lightsalmon; 
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        <img src="images/spongebob.jpg" alt="" width="300" height="200">
+    </div>
+    <div class="blur">
+        <img src="images/spongebob.jpg" alt="" width="300" height="200">
+
+    </div>
+    <div class="multi">
+        <img src="images/spongebob.jpg" alt="" width="300" height="200">
+    </div>
+</body>
+</html>

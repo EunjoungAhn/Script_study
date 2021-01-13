@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자-이항2</title>
+    <script>
+        input = prompt("점수를 입력해주세요.");
+        score = parseInt(input);
+
+        if(score >= 90){
+            grade = "A";
+            document.write('<img src="num/a.jpg" alt="">');
+        }else if(score >= 80){
+            grade = "B";
+            document.write('<img src="num/b.jpg" alt="">');
+        }else if(score >= 70){
+            grade = "C";
+            document.write('<img src="num/c.jpg" alt="">');
+        }else{
+            grade = "D";
+            document.write('<img src="num/d.jpg" alt="">');
+        }
+        document.write("당신의 학점은"+grade)
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

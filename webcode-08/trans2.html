@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 연습</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(236, 213, 213);
+            transition: background-color 5s;
+            color: white;
+            transition: width 6s;
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        div:hover{
+            background-color: green;
+            /* 박스 사이즈 400px 로 변경 하는 transition */
+            width: 400px;
+        }
+        div p{
+            text-align: center;
+            font-size: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>마우스를 올리면색상이 변함.</h2>
+    <div> <p> 헐크!! </p> </div>
+</body>
+</html>

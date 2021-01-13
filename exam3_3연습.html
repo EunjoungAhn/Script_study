@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 변경 Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: green; 
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        배경색을 바꿉니다.
+    </div>
+    <input type="button" value="빨강1" onclick="inputbg1()"> <!--이벤트-->
+    <input type="button" value="노랑2" onclick="inputbg2()"> <!--이벤트-->
+    <input type="button" value="보라3" onclick="inputbg3()"> <!--이벤트-->
+    
+    <script>
+        function inputbg1(){
+            divtag = document.getElementById("demo");
+            divtag.style.backgroundColor = "red";
+        }2
+
+        function inputbg2(){
+            divtag = document.getElementById("demo");
+            divtag.style.backgroundColor = "yellow";
+        }
+
+        function inputbg3(){
+            divtag = document.getElementById("demo");
+            divtag.style.backgroundColor = "purple";
+        }
+    </script>
+</body>
+</html>

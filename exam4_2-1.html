@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 이미지 랜덤 출력</title>
+    <script>
+        //랜덤값(1-10까지)발생해서 숫자 이미지 중 랜덤하게 3개 출력하기
+        //(단조건 중복되지 않게)
+        for(i=1;i<4;i++){
+            ran = Math.random()*10+1;
+            num = parseInt(ran);
+                switch(num){
+                case 1:
+                document.write("<img src=images/3_of_clubs.png width=80px height=100px>");
+                break;
+                case 2:
+                document.write("<img src=images/4_of_clubs.png width=80px height=100px>");
+                break;
+                case 3:
+                document.write("<img src=images/5_of_clubs.png width=80px height=100px>");
+                break;
+                case 4:
+                document.write("<img src=images/6_of_clubs.png width=80px height=100px>");
+                break;
+                case 5:
+                document.write("<img src=images/7_of_clubs.png width=80px height=100px>");
+                break;
+                case 6:
+                document.write("<img src=images/8_of_clubs.png width=80px height=100px>");
+                break;
+                case 7:
+                document.write("<img src=images/9_of_clubs.png width=80px height=100px>");
+                break;
+                case 8:
+                document.write("<img src=images/10_of_clubs.png width=80px height=100px>");
+                break;
+                case 9:
+                document.write("<img src=images/2_of_clubs.png width=80px height=100px>");
+                break;
+                default:
+                document.write("<img src=images/joker.jpg width=80px height=100px>")
+                break;
+                }
+        }
+
+document.write("<br>")
+document.write("<br>")
+document.write("<br>")
+
+
+        max = 10;
+        min = 1;
+        mid = 0;
+        for(i=1;i<4;i++){
+            ran = Math.random()*10
+            num = parseInt(ran);
+            if(num>max){
+                max = num; 
+                //document.write(max);
+                //document.write("<br>")
+                switch(max){
+                case 1:
+                document.write("<img src=images/3_of_clubs.png width=80px height=100px>");
+                break;
+                case 2:
+                document.write("<img src=images/4_of_clubs.png width=80px height=100px>");
+                break;
+                case 3:
+                document.write("<img src=images/5_of_clubs.png width=80px height=100px>");
+                break;
+                case 4:
+                document.write("<img src=images/6_of_clubs.png width=80px height=100px>");
+                break;
+                case 5:
+                document.write("<img src=images/7_of_clubs.png width=80px height=100px>");
+                break;
+                case 6:
+                document.write("<img src=images/8_of_clubs.png width=80px height=100px>");
+                break;
+                case 7:
+                document.write("<img src=images/9_of_clubs.png width=80px height=100px>");
+                break;
+                case 8:
+                document.write("<img src=images/10_of_clubs.png width=80px height=100px>");
+                break;
+                case 9:
+                document.write("<img src=images/2_of_clubs.png width=80px height=100px>");
+                break;
+                default:
+                document.write("<img src=images/joker.jpg width=80px height=100px>")
+                break;
+                }
+                
+            }
+            if(min<num){
+                min = num;
+                //document.write(min);
+                //document.write("<br>")
+                switch(min){
+                case 1:
+                document.write("<img src=images/3_of_clubs.png width=80px height=100px>");
+                break;
+                case 2:
+                document.write("<img src=images/4_of_clubs.png width=80px height=100px>");
+                break;
+                case 3:
+                document.write("<img src=images/5_of_clubs.png width=80px height=100px>");
+                break;
+                case 4:
+                document.write("<img src=images/6_of_clubs.png width=80px height=100px>");
+                break;
+                case 5:
+                document.write("<img src=images/7_of_clubs.png width=80px height=100px>");
+                break;
+                case 6:
+                document.write("<img src=images/8_of_clubs.png width=80px height=100px>");
+                break;
+                case 7:
+                document.write("<img src=images/9_of_clubs.png width=80px height=100px>");
+                break;
+                case 8:
+                document.write("<img src=images/10_of_clubs.png width=80px height=100px>");
+                break;
+                case 9:
+                document.write("<img src=images/2_of_clubs.png width=80px height=100px>");
+                break;
+                default:
+                document.write("<img src=images/joker.jpg width=80px height=100px>")
+                break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

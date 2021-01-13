@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>택시운전기사 하루 월급</title>
+    <script>
+        taxi = 0;
+        x = 1;
+        for(i=1;i<8;i++){
+            ran = Math.random()*10000
+            num = parseInt(ran);
+            document.write(x + "번째 손님의 요금은 " + num + "원" + "<br>")
+            x++;
+            taxi +=num;
+        }
+        document.write("7명의 총 수입 = " + (taxi) + "원 입니다.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

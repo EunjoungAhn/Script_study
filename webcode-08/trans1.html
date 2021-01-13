@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 예제</title>
+    <style>
+        span{
+            /*변화를 줄 요소에 애니메이션 정의*/
+            /* font-size: 300%;  몇초동안  esse - 대기 시간*/
+            transition: font-size 5s ease 3s;
+        }
+        span:hover{
+            font-size: 1000%;
+        }
+    </style>
+</head>
+<body>
+    <h1>애니메이션-요소전환</h1>
+    <span> 꽝!</span>
+</body>
+</html>

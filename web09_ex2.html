@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤값 5번 생성하여 총합 구하기</title>
+    <script>
+        num1 = 0;
+        x = 1;
+        for(i=1;i<6;i++){
+            ran = Math.random()*10
+            num = parseInt(ran);
+            document.write(x + "번째 숫자는 " + num + "<br>")
+            num1 +=num;
+            x++;
+        }
+        document.write("5개의 랜덤 합은 = " + (num1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

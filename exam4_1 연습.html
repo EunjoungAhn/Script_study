@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩반복문</title>
+    <script>
+//for문을 사용하여 이런 출력문을 만드시오.
+// *****
+// ****
+// ***
+// **
+// *
+// *****
+//  ****
+//   ***
+//    **
+//     *
+        for(r=6;r>1;r--){
+            for(c=0;c<(r-1);c++){
+                document.write("★")
+            }
+            document.write("<br>")
+        }
+        
+document.write("<br>")
+
+        for(r=0;r<5;r++){//첫 반복 for문에는 변화가 없다.
+            for(c=0;c<(r+1);c++){//두번째 for문의 초기식에도 변화가 없다.
+                //but 조건식이 달라야 한다.
+                 document.write("★")
+            }
+            document.write("<br>")
+        }
+        
+document.write("<br>")
+    
+        for(r=0;r<5;r++){
+            document.write("1")
+            for(c=0;c<4;c++){
+                 document.write("2")
+                 for(c=0;c<3;c++){
+                     document.write("4")
+                }
+            }
+            document.write("<br>" +"3")
+        }
+
+document.write("<br>")
+
+        for(r=0;r<5;r++){
+            for(a=r;a<5;a++){
+                document.write("-")
+                //a++;
+            }
+            for(c=0;c<(r+1);c++){
+                document.write("★")
+            }
+            document.write("<br>")
+        }
+
+document.write("<br>")
+
+            for(r=0;r<5;r++){//첫 반복 for문에는 변화가 없다.
+                for(c=r;c<5;c++){//두번째 for문의 초기식에도 변화가 없다. 
+                    //but 조건식이 달라야 한다.
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+
+            for(r=0;r<5;r++){
+                for(c=0;c<(r+1);c++){
+                    document.write("&nbsp")
+                }
+                for(a=r;a<5;a++){
+                    document.write("*")
+                    //a++;
+                }
+                document.write("<br>")
+            }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

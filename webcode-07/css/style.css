@@ -1,0 +1,89 @@
+/*공통*/
+div.wrapper{border: 1px solid rgb(0, 255, 42);}
+
+body{
+    border: 1px solid rgb(0, 0, 0);
+
+    background-color: white;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+div.wrapper{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: lightgray;
+}
+/*헤더*/
+header{
+    border: 1px solid rgb(0, 26, 255);
+
+    height: 100px;
+}
+#logo{
+    float: left;
+    width: 200px;
+    height: 25px;
+    margin: 25px;
+}
+nav{
+    float: right;
+    width: 780px;
+    margin-top: 30px;
+
+
+}
+ul.menu{
+    list-style: none;
+}
+ul.menu li{
+    float: left;
+    width: 180px;
+    height: 40px;
+    background-color: gray;
+}
+ul.menu li a {
+    display: block; /*a태그를 감싸고 있으며, inline이 들어가 가운데 정렬을 위해 
+    blokc 을 적용*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 48px;
+}
+ul.menu li a:hover{
+    background-color: #4785e7;
+}
+
+/*메인*/
+section.sect1{
+    border: 1px solid red;
+
+    height: 500px;
+    background-color: white;
+    margin: 25px;
+    padding: 10px;
+}
+section.sect2{
+    border: 1px solid yellow;
+
+    height: 300px;
+    margin: 25px;
+    padding: 10px;
+}
+#pic{
+    border: 1px solid yellow;
+    float: left;
+    text-align: center;
+}
+#ppic{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+}
+
+/*하단*/
+footer{
+    height: 50px;
+    text-align: center;
+}
