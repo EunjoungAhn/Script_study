@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성만 적으면 값만 가져온다.</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        .hightLight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="p1">안녕하세요. 제이쿼리 dom 테스트입니다.</p>
+    <p id="p2" class="hightLight">안녕하세요. 제이쿼리 dom 테스트입니다.</p>
+    <p id="p3">안녕하세요. 제이쿼리 dom 테스트입니다.</p>
+    <p id="p4">안녕하세요. 제이쿼리 dom 테스트입니다.</p>
+
+    <script>
+        $(function(){
+            //실제 태그에는 없지만 css에 만들어진 클라스를 
+            //class없이 강제로 적용해준다.
+            $("#p4").addClass("hightLight");
+            //적용되있는 class를 강제로 없애준다.
+            $("#p2").removeClass("hightLight");
+        });
+    </script>
+</body>
+</html>

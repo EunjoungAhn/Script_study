@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤코드 생성 및 입력(강사님)</title>
+
+</head>
+<body>
+
+        <h1>임의코드체크</h1>
+
+    <p><span id="code"></span></p>
+    
+    <p>
+        <input id="mine" type="text" placeholder="랜덤 코드를 입력해주세요.">
+    </p>
+
+    <p>
+        <input type="button" value="코드체크" onclick="chkcode();">
+    </p>
+
+    <script>
+        //중복허용 랜덤코드(0~9,A~Z) 5자리코드 생성하고
+        //코드를 입력하시오
+
+        //최종 문자열
+        str ="";
+        //함수 랜덤한 문자열을 만든다.
+        
+        function randomChar() {
+            chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            //10+26 
+            i = parseInt(Math.random()*36);
+            ch = chars.substring(i, i+1);
+            // alert(ch);
+            return ch;
+        }
+        for(k=0; k<5; k++){
+            str = str + randomChar();
+        }
+        // alert(str);
+        document.getElementById("code").innerHTML=str;
+
+            function chkcode(){
+                comstr = document.getElementById("code").innerText;
+                mystr = document.getElementById("mine").value;
+                if(comstr == mystr){
+                    alert("패스");
+                }else{
+                    alert("다시 입력하시오");
+                }
+            }
+        // randomChar()
+
+
+
+        // //랜덤 코드 확인 
+        // function rck(){
+        //     cpw=document.getElementById("ck").value;
+        //     if(text == cpw){
+        //         document.write("동일한 코드입니다.")
+        //     }else{
+        //     document.write("암호를 다시 입력해주세요.");
+        //     }
+        // }
+
+    </script>
+
+</body>
+</html>

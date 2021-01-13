@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입창(강사님)</title>
+    <script>
+        //아이디 입력
+        //비밀번호 입력
+        //비밀번호 확인
+        //이메일 입력
+        //1-공백이 있으면 다시 입력
+        //ex) 아이디를 입력하시오.
+        //2-비밀번호와 비밀번호확인 다르면
+        //ex) 비밀번호가 다릅니다. 다시 입력하세요.
+        //모두가 다 맞으면 가입성공입니다. 
+
+        function join(){
+            id = document.getElementById("id").value;
+            pw = document.getElementById("pw").value;
+            pwc = document.getElementById("pwc").value;
+            email = document.getElementById("email").value;
+
+            if(id==""){
+                alert("아이디를 입력하세요.")
+                // document.write("회원가입 실패!")
+                return;
+
+            }else if(!pw){
+                alert("비밀번호를 입력하세요.")
+                // document.write("회원가입 실패!")
+                return;
+
+            }else if(!email){
+                alert("이메일을 입력하세요.")
+                // document.write("회원가입 실패!")
+                return;
+
+            }else if(!pwc){
+                alert("공백을 입력하지 마세요.")
+                // document.write("회원가입 실패!")
+                return;
+
+            }else if(pw != pwc){
+                alert("비밀번호가 다릅니다. 다시 입력하세요.");
+                // document.write("회원가입 실패!")
+            }else{
+                // document.write("회원가입 완료!")
+                alert("회원가입 완료!");
+            }           
+        }
+    </script>
+</head>
+<body>
+
+    <h1>회원가입창</h1>
+
+    <p class="ck">
+        <input type="text" value="" placeholder="아이디" id="id">
+    </p>
+    
+    <p class="ck">
+        <input type="password" value="" placeholder="비밀번호" id="pw">
+    </p>
+
+    <p class="ck">
+        <input type="password" value="" placeholder="비밀번호확인" id="pwc">
+    </p>
+
+    <p class="ck">
+        <input type="text" value="" placeholder="이메일" id="email">
+    </p>
+    
+    <p>
+        <input type="button" value="가입하기" onclick="join();">
+    </p>
+
+</body>
+</html>

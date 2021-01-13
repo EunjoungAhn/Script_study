@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤코드 생성 및 입력</title>
+    <script>
+        //중복허용 랜덤코드(0~9,A~Z) 5자리코드 생성하고
+        //코드를 입력하시오
+
+        //랜덤 코드
+        text = "";
+        rct = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        
+        function ranc() {
+
+            for (var i = 0; i < 5; i++)
+                                    //Math.floor - 소수점 이하는 버린다.
+                text += rct.charAt(parseInt(Math.random() * rct.length));
+
+            return text;
+        }
+        document.write(ranc());
+
+        // alert(text);
+
+        //랜덤 코드 확인 
+        function rck(){
+            cpw=document.getElementById("ck").value;
+            if(text == cpw){
+                document.write("동일한 코드입니다.")
+            }else{
+            document.write("암호를 다시 입력해주세요.");
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+        <h1>임의코드체크</h1>
+
+    <p> </p>
+    
+    <p>
+        <input id="ck" type="text" placeholder="랜덤 코드를 입력해주세요.">
+    </p>
+
+    <p>
+        <input type="button" value="코드체크" onclick="rck();">
+    </p>
+
+
+</body>
+</html>

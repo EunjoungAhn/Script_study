@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 변경 Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        배경색을 바꿉니다.
+    </div>
+    <input type="button" value="배경색 변경" onclick="inputfx()">
+
+    <script>
+        function inputfx(){
+            input = prompt("변경할 색은 빨강(1),노랑(2),보라(3)?","");
+            color = "blue";
+            switch(input){
+                case '1':
+                    color ="red";
+                    break;
+                case '2':
+                    color ="yellow";
+                    break;
+                case '3':
+                    color ="violet";
+                    break;
+                default:
+            }
+
+        changeColor(color);
+        }
+
+        function changeColor(c){
+            divtag = document.getElementById("demo");
+            divtag.style.backgroundColor = c;
+        }
+
+    </script>
+</body>
+</html>

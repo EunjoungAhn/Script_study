@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 예제</title>
+    <style>
+        div.out{
+            width: 960px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        div.in{
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            margin: 5px;
+            background-color: lightgreen;
+        }
+        #rot{
+            /*각도 만큼 회전*/
+            transform: rotate(20deg);
+        }
+        #rot:hover{
+            transform: rotate(90deg);
+        }
+
+        #skw{
+            transform: skew(0,-20deg);
+        }
+        #skw:hover{
+            transform: skew(0,-80deg);
+        }
+
+        #trs{
+            transform: translate(10px, 50px);
+        }
+        #trs:hover{
+            transform: translate(50px, 10px);
+        }
+
+        #scl {
+            transform: scale(0.5, 1); /*(배수)*/
+        }
+        #scl:hover{
+            transform: scale(0.5, 1.5);
+        }
+
+
+        #pro{
+            margin-top: 150px;
+            height: 100px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        #pro:hover{
+            transform: rotate(5deg);
+            animation-timing-function: ease-in;
+        }
+    </style>
+</head>
+<body>
+    <h2>도형변환</h2>
+    <div class="out">
+        <div class="in" id="rot">회전</div>
+        <div class="in" id="skw">기울기</div>
+        <div class="in" id="trs">이동</div>
+        <div class="in" id="scl">확대/축소</div>
+
+        <div id="pro">연습</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성만 적으면 값만 가져온다.</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="source">안녕하세요. 제이퀘리~</div>
+    <div id="destinate">여기로 글자넣기</div>
+    <div id="test"></div> <!--빈 영역에도 값을 넣을 수 있다.-->
+
+    <script>
+        $(function(){
+            text = $("#source").text(); //속성만 적으면 값만 가져온다.
+            $("#destinate").text(text);
+            $("#test").text(text);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이퀘리 선택자 예제2</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+   
+</head>
+<body>
+
+    <span class="box2">안녕</span>
+    <span id="friend">친구들</span>
+
+    <div id="box1">가</div>
+    <div class="box2">나</div>
+    <div my-data="1234">다</div>
+    
+    <script>
+        $(document).ready(function(){
+        // $(function(){
+            $("span").css("border","3px solid black");
+            $("span.box2").css("background-color","blue");
+            $("div#box1").css("background-color","green");
+            $("div.box2").css("background-color","blue");
+            $('[my-data="1234"]').css("background-color","red");
+            
+
+
+        });
+    </script>
+</body>
+</html>

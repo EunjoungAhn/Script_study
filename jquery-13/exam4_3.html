@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성만 적으면 값만 가져온다.</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <img id="photo" src="images/ball.jpg">
+    <p id="p1"><button>이미지1</button></p>
+    <p id="p2"><button>이미지2</button></p>
+    <p id="p3"><button>이미지3</button></p>
+
+    <script>
+        $(function(){
+            $("#p1").click(function(){
+                $("#photo").attr("src","images/mouse.jpg");
+                });
+            });
+
+        $(function(){
+            $("#p2").click(function(){
+                $("#photo").attr("src","images/kobu.jpg");
+                });
+            });
+
+        $(function(){
+            $("#p3").click(function(){
+                $("#photo").attr("src","images/ball.jpg");
+                });
+            });
+    </script>
+</body>
+</html>

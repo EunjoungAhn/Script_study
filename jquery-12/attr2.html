@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이퀘리 선택자 예제2</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+   
+</head>
+<body>
+        <!-- 1. 이미지 출력 -->
+        <h2>5초후 이미지 변경됩니다.</h2>
+        <img id="img" src="image/1_content_400x200.jpg" alt="">
+
+    <script>
+        imgurl ="image/2_content_400x200.jpg";
+        $(document).ready(function(){
+        // $(function(){
+
+            //2.setTimeout() 사용해서 imgchg() 호출
+            //3.이미지 변경하는 함수를 구현
+            setTimeout(imgchg, 1000);
+            
+        });
+
+        function imgchg(){
+            // alert("함수호출");
+        //  document.getElementById("img").src="image/2_content_400x200.jpg";
+        // $("img").attr("src","image/2_content_400x200.jpg");
+        $("img").attr("src",imgurl);
+        }
+    </script>
+</body>
+</html>

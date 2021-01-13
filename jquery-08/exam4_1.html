@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면</title>
+    <script>
+        function chkLogin(){
+            log2 = document.getElementById("log1").value;
+            pw2 = parseInt(document.getElementById("pw1").value);
+            
+            if(log2 == "javascript"){
+                if(pw2 == 1234){
+                document.write("로그인 성공!")
+                }else{
+                    document.write("비밀번호가 틀렸습니다!")
+                }
+            }else{
+                document.write("로그인 실패!")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>로그인화면</h1>
+
+    <p>
+        <input type="text" value="" placeholder="아이디" id="log1">
+        <input type="password" value="" placeholder="비밀번호" id="pw1">
+    </p>
+    
+    <p>
+        <input type="button" value="로그인" onclick="chkLogin();">
+    </p>
+
+</body>
+</html>

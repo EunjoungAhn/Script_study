@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 반복 대입</title>
+    <script>
+        //대입연산자
+        score = 100; //기본
+        eng = [100,90,80]; //선언과 동시에 값을 저장 = 초기화
+        age = Array(3); //길이가 3인 배열을 선언
+
+        //prompt를 통해서 값을 저장
+        input = prompt("나이를 입력하시오1","");
+        document.write(input+"<br>");
+
+        //반복문을 사용해서 가능함
+        //eng 배열을 방복문으로 출력
+        for(i=0; i<age.length; i++){
+            // document.write(eng[i]+"<br>");
+            age[i] = prompt("나이를 입력하시오2","");
+        }
+        for(i=0; i<age.length; i++){
+            document.write("나이는: "+age[i]+"<br>")
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 애니메이션</title>
+    <style>
+        @keyframes expandBox{
+            from{width: 200px; height: 200px; background-color: limegreen}/*0%대신 사용*/
+            50%{width: 500px; height: 500px; background-color: blue;}
+            to{width: 200px; height: 200px; background-color: limegreen;}/*100%대신 사용*/
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+
+            animation-name: expandBox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-direction: reverse; */
+        }
+    </style>
+</head>
+<body>
+    <h2>div 박스가 5초 동안 커지는 애니메이션</h2>
+    <div>점점 커지는 상자</div>
+</body>
+</html>

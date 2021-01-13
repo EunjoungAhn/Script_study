@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 변경 Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        배경색을 바꿉니다.
+    </div>
+    
+    <script>
+
+        function changeColor(){
+            divtag = document.getElementById("demo");
+            divtag.style.backgroundColor = "green";
+        }
+
+        changeColor();
+    </script>
+</body>
+</html>

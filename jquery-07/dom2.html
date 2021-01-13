@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 변경-document</title>
+
+
+</head>
+<body>
+    <h1>사진변경</h1>
+    <div id="demo">
+        <img id="plane" src="images/1p_600x400.jpg" alt="">
+    </div>
+
+<script>
+        function changeImg(){
+            imgtag = document.getElementById("plane");
+            imgtag.src = "images/2p_600x400.jpg";
+            imgtag.setAttribute("src","images/2p_600x400.jpg");
+        }
+
+        changeImg();
+
+    </script>
+
+</body>
+</html>

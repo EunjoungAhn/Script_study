@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학 점수 입력 배열</title>
+    <script>
+        //수학 점수 3개를 입력 받고 합을 출력해라.
+        ms = new Array(3);
+        sum = 0;
+        for(i=0; i<ms.length; i++){
+            ms[i] = parseInt(prompt("수학점수 3개만 입력해주세요."));
+            sum+=ms[i];
+        }
+        for(i=0; i<ms.length; i++){
+            document.write("입력한 수학점수는'"+ms[i]+"'입니다.<br>");
+        }
+
+        document.write("수학 총 점수 입니다."+sum);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

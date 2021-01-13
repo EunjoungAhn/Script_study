@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 변경 연습</title>
+    <script>
+        window.onload
+                function bgc(){
+                    document.getElementById("red").style.backgroundColor="red";
+                }
+
+                function bgv(){
+                    document.getElementById("div").style.backgroundColor="red";
+                }
+    </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">나 div</div>
+    <input id="red" type="botton" value="빨강 버튼" onclick="bgc()">
+    <input id="red" type="botton" value="빨강" onclick="bgv()">
+
+</body>
+</html>

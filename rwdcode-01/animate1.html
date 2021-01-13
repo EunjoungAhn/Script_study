@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 예제</title>
+    <style>
+        /* 애니메이션 적용 방법*/
+
+        @keyframes textColorAni{ /* 애니메이션*/
+            0%{color: blue;}/*시간비율 {스타일; 스타일;} 시작*/
+            50%{color: green;}
+            100%{color:red;}/*시간비율 {스타일; 스타일;} 끝*/
+        }
+        span{
+            border: 1px solid red;
+            animation-name: textColorAni; /*애니메이션 코드 이름*/
+            animation-duration: 5s; /*시간*/
+            /* animation-iteration-count: 5; 반복 */
+            animation-iteration-count: infinite; /*무한*/
+        }
+    </style>
+</head>
+<body>
+    <h1>글자 애니메이션1</h1>
+    <p><span>애니메이션TEXT</span>5초동안에 글자색이 변경됩니다.</p>
+</body>
+</html>

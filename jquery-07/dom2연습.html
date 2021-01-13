@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 출력 연습</title>
+    <style>
+    </style>
+    <script>
+        window.onload
+        // function pic1(){
+        //     document.getElementById("p").src="images/1p_600x400.jpg";
+        // }
+        // function pic2(){
+        //     document.getElementById("p").src="images/2p_600x400.jpg";
+        // }
+        // function pic3(){
+        //     document.getElementById("p").src="images/3p_600x400.jpg";
+        // }
+            parry = ["images/1p_600x400.jpg","images/2p_600x400.jpg","images/3p_600x400.jpg"];
+            function ppp(p){
+               document.getElementById("p").src= parry[p];
+            }
+    </script>
+</head>
+<body>
+        <img id="p" src="images/2p_600x400.jpg">
+
+    <input type="button" value="사진 출력"onclick="pic1()">
+    <input type="button" value="사진 출력"onclick="pic2()">
+    <input type="button" value="사진 출력"onclick="pic3()">
+
+    <input type="button" value="사진 출력2"onclick="ppp()">
+    
+</body>
+</html>

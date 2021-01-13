@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성만 적으면 값만 가져온다.</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <p id="p1">제이쿼리 프로그래밍 연습</p>
+    <p id="b1"><button>숨기기</button></p>
+    <p id="b2"><button>보이기</button></p>
+
+    <script>
+        $(function(){
+            $("#b1").click(function(){
+                $("#p1").hide();
+            });
+        });
+
+        $(function(){
+            $("#b2").click(function(){
+                $("#p1").show();
+            });
+        });
+
+    </script>
+</body>
+</html>

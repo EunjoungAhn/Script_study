@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 시간함수예</title>
+<style>
+    @keyframes boxMove{
+        from {left: 0px;}
+        50% {left: 500px;}
+        to {left: 0px;}
+    }
+    body{
+        background-color: black;
+    }
+    h2{
+        color: white;
+    }
+    div{
+        width: 130px;
+        height: 60px;
+        margin: 5px;
+        background-color: yellow;
+        position: relative;
+    }
+    #d1{
+        animation-name: boxMove;
+        animation-duration: 10s;
+        animation-timing-function: ease; /*기본값*/
+        animation-iteration-count: 5;
+    }
+    #d2{
+        animation-name: boxMove;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: 5;
+
+    }
+    #d3{
+        animation-name: boxMove;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 5;
+
+    }
+    #d4{
+        animation-name: boxMove;
+        animation-duration: 10s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 5;
+    }
+    #d5{
+        animation-name: boxMove;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 5;
+    }
+</style>
+</head>
+<body>
+
+    <h2>애니메이션 시간함수예</h2>
+
+    <div id="d1">ease<br>기본값</div>
+    <div id="d2">linear<br>일정하게</div>
+    <div id="d3">ease-in<br>느리게시작</div>
+    <div id="d4">ease-out<br>느리게멈춤</div>
+    <div id="d5">ease-in-out<br>느리게시작멈춤</div>
+
+</body>
+</html>

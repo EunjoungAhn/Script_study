@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 그래프</title>
+    <script>
+        // 1. 랜덤 함수로 그래픽 찍기.
+        function random(){
+            rst = parseInt(Math.random()*20+1);
+            return rst;
+        }
+        
+        //2. 랜덤 수 만큼 반복 하면서 *을 찍어본다.
+        size = random();
+        
+        document.write("랜덤 함수 그래프 찍기: ")
+        
+            while(size>0){
+                document.write("*");
+                size--;
+            }
+        
+        document.write(rst+"개<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
