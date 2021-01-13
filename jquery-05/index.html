@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //함수는 일정한 규칙이 있는것을 만들어서 한번에 적용하기 위해서.
+        function sqrsum(f,g,h){//이름(입력값)-함수(블랙박스)
+            r = f*f+g*g+h*h;
+            return r;
+        }
+        x = 10; y = 8; z = 9;
+        result = sqrsum(x,y,z);//x*x + y*y + z*z;//제곱의 합
+
+        a = 11; b = 7; c = 6;
+        result2 = sqrsum(a,b,c);//a*a + b*b + c*c;
+
+        i = 4; j = 3; k = 5;
+        result3 = sqrsum(i,j,k);//i*i + j*j + k*k;
+
+        document.write(result+"<br>");
+        document.write(result2+"<br>");
+        document.write(result3+"<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

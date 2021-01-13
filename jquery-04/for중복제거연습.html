@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중복값 제거</title>
+    <script>
+        //랜덤값(1-10까지)발생해서 숫자 이미지 중 랜덤하게 3개 출력하기
+        //(단조건 중복되지 않게)
+        document.write("중복값 제거 후 숫자 3개만 출력"+"<br>")
+        max = 0;
+        for(i=1;i<4;i++){
+            num = parseInt(Math.random()*10+1);
+            
+            if(num<max){
+                max = num; 
+                document.write(max);
+                document.write("<br>");
+            }
+            else if(num>max){
+                max = num;
+                document.write(max);
+                document.write("<br>");
+            }
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-랜덤값10개출력 후 합 구하기</title>
+    <script>
+        num=0;
+        sum=0;
+        while(num<2){
+            ran = Math.random()*10;
+            ran2 = parseInt(ran);
+            num++;
+            document.write(ran2 + "<br>");
+            ran3 = ran2;
+            sum= sum +ran2;
+        }
+        document.write("랜덤값 총 합은 = " + sum);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

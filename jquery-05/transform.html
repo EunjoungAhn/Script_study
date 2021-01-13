@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>섭씨, 화씨 온도 구하기</title>
+    <script>
+        function fc(input){
+            f = input*9.0/5.0+32;
+            //주의: 실수값이 나오면 실루로 변환 후 계산
+            return f;
+        }
+        input = prompt("온도를 입력해 주세요.")
+        result = fc(input);
+        document.write("섭씨 온도: "+input+"C <br>" +"화씨 온도: " + result +"F" );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

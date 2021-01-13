@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-while</title>
+    <script>
+        //초기식 - 무조건 한번은 실행한다.
+        a = parseInt(Math.random()*10+1);
+        b = parseInt(Math.random()*10+1);
+        c = parseInt(Math.random()*10+1);
+        // document.write(a + "<br>") 
+        // document.write(b + "<br>") 
+        while(a==b || b==c || c==a){//같은 경우 다시 생성
+            // a = parseInt(Math.random()*10+1); 맨처음 나오기에 반복할 필요가 없다.
+            b = parseInt(Math.random()*10+1);
+            c = parseInt(Math.random()*10+1);
+        }
+        //이미지 시작 제목이 숫자 이기에 랜덤하게 뽑힌 숫자를 중간에 삽입하여 
+        //랜덤(숫자) 이미지를 출력한다.
+        document.write("<h1>랜덤 이미지 3장 출력</h1>");
+
+        document.write("<img src='images/"+a+"_of_clubs.png'width='200' height='300'br>");
+        document.write("<img src='images/"+b+"_of_clubs.png'width='200' height='300'br>");
+        document.write("<img src='images/"+c+"_of_clubs.png'width='200' height='300'br>");
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write(a+"/");
+        document.write(b+"/");
+        document.write(c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

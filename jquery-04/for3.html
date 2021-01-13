@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-랜던값출력</title>
+    <script>
+        for(i=1;i<10;i++){
+        x = Math.random()*10;
+        //random 은 실수를 출력하기 때문에 *10을 한다. (범위는 0 ~ 10 이다.) 1~10까지 하고 싶으면 +1을 하면 된다.
+        y = parseInt(x);//실수 -> 정수 변환
+        document.write(y + "<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

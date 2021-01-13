@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 중첩2</title>
+    <script>
+        score = 85; //90된다
+        
+        if(score>=90){
+            grade = "A";
+               if(score>=95){
+                   grade = grade + "+";
+                   }
+        }else{
+            grade = "B"
+                if(score>=85){
+                   grade = grade + "+";
+                   }
+        }
+        document.write(score + "점은 " + grade + "입니다.")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

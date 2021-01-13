@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-prompt</title>
+    <script>
+        alert("3개의 숫자를 입력받고 가장 큰 수를 출력하시오")
+        max = 0; //가장 큰 수 값
+        //입력 반복
+        for(i=1;i<=3;i++){
+        input = prompt("정수를 입력하시오","");
+        if(i==1){// 1번째 
+        max = parseInt(input);//문자를 숫자로 바꿔줘야 한다.
+        }else{
+            if(max < parseInt(input)){
+                max = parseInt(input)
+            }
+        }
+    }
+    document.write(max + "<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

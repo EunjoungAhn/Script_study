@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문-switch</title>
+        <script>
+            /* 짝수 홀수 */
+            x = 9292;
+            gubun = "";
+            switch(x%2){//비교식이 아닌 '산수식'(경우) 이다.
+                case 1: // 범위 x -> 경우만 적용.
+                    gubun = "홀수임";
+                    break;
+                case 0:
+                    gubun = "짝수임";
+                    break;
+                default:
+            }
+            document.write(x+"은"+gubun);
+        </script>
+    </title>
+</head>
+<body>
+    
+</body>
+</html>

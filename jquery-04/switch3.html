@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1번째 문제
+        //1 2 3 4 5 6 7 8 9 10 11 12
+            //31 28 31 30 31 30 31 31 30 30 31
+        // input = prompt("오늘은 무슨 달입니까?","");
+        // mon = parseInt(input);
+        // switch(mon){
+        //     case 1: //break
+        //     case 3:
+        //     case 5:
+        //     case 7:
+        //         day = 31;
+        //         break;
+        //     default:
+        //         day = -1;
+        // }
+        // document.write(input +"월은"+day+"일 까지 있습니다.")
+
+        //2번째 문제
+         //011 017 = sk 016 018 = kt 019 = lg
+        input = prompt("전화 번호 앞자리를 입력해 주세요.","");
+       // pho = parseInt(input);
+        switch(input){
+            case "011":
+            case "017":
+            document.write("sk");
+                break;
+
+            case "016":
+            case "018": 
+                document.write("kt");
+                break;
+
+            case "019":
+                document.write("lg");
+                break;
+
+            default:
+                document.write("옛날 사람이 아니라 요즘 미래의사람이군요?!");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

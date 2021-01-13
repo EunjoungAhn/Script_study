@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 중첩문</title>
+    <script>
+        x = prompt("숫자를 넣어주세요.");
+        x = parseInt(x);
+        gubun = "";
+        if(x%2 == 0){
+            if(x%3 ==0){
+                gubun = "2배수 && 3의 배수임"
+            }else{
+                gubun = "2배수 && 3의 배수아님"
+            }
+        }
+        document.write(x+"는 " + gubun);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

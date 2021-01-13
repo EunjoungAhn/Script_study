@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보 함수</title>
+    <script>
+        //가위바위보 중 랜덤 한개 값을 반환
+        function computeGam(){
+                ran = parseInt(Math.random()*3+1);
+                if(ran==1){
+                    document.write("바위<br>")
+                }else if(ran==2){
+                    document.write("가위")
+                }else if(ran==3){
+                    document.write("보")
+                }
+            }
+            alert("숫자는 입력하면 안됩니다.");
+            
+            me = prompt("승부! 가위,바위,보")
+            com = computeGam();
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

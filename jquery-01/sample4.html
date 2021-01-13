@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샘플4</title>
+    <script>
+        //1.숫자 입력
+        no1 = prompt("첫번째 숫자는?");//숫자를 넣어도 문자 취급을 한다.
+        no2 = prompt("두번째 숫자는?");
+        //2.숫자 비교
+        //alert(parseInt(no1) + 10000);//문자를 숫자로 바꾸어 주는 속성
+        var max = 0;
+        if(parseInt(no1)>parseInt(no2)){//yes
+            max = no1;
+        }else{//no
+            max = no2;
+        }if(parseInt(no1) == parseInt(no2)){
+            document.writeln("두 수가 같습니다.")
+        }else{     
+        //출력
+        document.writeln("두 수 중 큰 수를 출력하시오:" + max);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

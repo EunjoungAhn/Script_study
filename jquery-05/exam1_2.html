@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강사님 가위바위보</title>
+    <script>
+        //컴퓨터 가위바위보
+        function comGam() {
+            temp = parseInt(Math.random()*3)+1;
+            rst = "";
+            if(temp==1) {
+                rst="가위";
+            }else if(temp==2) {
+                rst="바위";
+            }else {
+                rst="보";
+            }
+            return rst;
+        }
+        com1 = comGam();
+        document.write("com1의 가위바위보="+com1);
+
+        //숫자로 가위 바위 보를 정의한다면
+        temp2 = prompt("가위(1)바위(2)보(3)를 선택하시오?","");
+        me = parseInt(temp2);
+        rstme = "";
+        if(temp2==1) {
+            rstme="가위";
+        }else if(temp2==2) {
+            rstme="바위";
+        }else {
+            rstme="보";
+        }
+        document.write("<br>"+"me의가위바위보="+rstme);
+
+        function compare(c, m) { // 일만하는 함수
+            rst = "";
+            if(c==m) {
+                rst="비겼음";
+            }else{
+                switch (c) {
+                    case '가위':
+                        if(m=='바위') {
+                            rst="사람승";
+                        }else{
+                            rst="컴터승";
+                        }
+                        break;
+                    case '바위':
+                        if(m=='보') {
+                            rst="사람승";
+                        }else{
+                            rst="컴터승";
+                        }
+                        break;
+                    case '보':
+                        if(m=='가위') {
+                            rst="사람승";
+                        }else{
+                            rst="컴터승";
+                        }
+                        break;
+                    default:
+                }
+            }
+            document.write("<br>결과는: "+rst);
+        }
+        compare(com1, rstme);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

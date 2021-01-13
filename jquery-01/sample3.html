@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샘플3</title>
+    <script>
+        function hide(){
+            document.getElementById('demo').style.display='none';
+            document.bgColor = "green";
+        }
+        function show(){
+            document.getElementById('demo').style.display='block';
+            document.bgColor = "white";
+        }
+    </script>
+</head>
+<body>
+    <h1>자바스크립트를 이용해서 p태그를 숨기고 보이는 예제</h1>
+    <p id="demo">까꿍!</p>
+    <div>
+        <input type="button" value="단락숨기기" onclick="hide()">
+        <input type="button" value="단락보이기" onclick="show()">
+    </div>
+</body>
+</html>

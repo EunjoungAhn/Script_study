@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 연습1</title>
+    <script>
+        //hello 를 5번 출력하는 함수 작성
+        //함수 내부에 내부변수(지역변수)가 없으므로 return 을 안 적어 줘도 된다.
+        //하지만 객체(함수) 안에 지역 변수가 있다면 반환해야 값을 얻을 수 있다. 
+        function printText(){
+           for(i=0;i<5;i++){
+               document.write("hello<br>")
+            }
+        }
+        //변수 input 저장된 문자를 5번 출력하는 함수 작성
+        input = prompt("입력해 주세요.");
+        function printText2(input){
+            for(i=0;i<5;i++){
+                document.write(input+"<br>")
+            }
+        }
+       
+        printText();
+        printText2("hi javascript");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

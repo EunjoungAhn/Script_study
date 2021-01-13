@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-구구단</title>
+    <script>
+        document.write("1단에서 9단 구구단" + "<br>");
+        for(x=1; x<10; x++){//홀수 구구단 출력 할때는 x,y를 10으로 하면된다.
+            //x++;// 짝수 구구단만 출력하고 싶을때
+            //x++;// 홀수 구구단을 출력하고 싶을때 x를 더하고 또 더하여 반복한다.
+            for(y=1; y<10; y++){
+                document.write(x + "x" + y + "= " + (x*y) + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

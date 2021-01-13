@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자 숫자 구별 함수</title>
+    <script>
+        x = 0;
+        input = prompt("숫자(f)나 문자(t)를 입력하시오");
+
+        while(isNaN(input)){//문자가 들어오면 다시 입력 반복
+            input = prompt("숫자(f)나 문자(t)를 입력하시오");
+            if(true){
+                document.write("문자 입니다.<br>")
+            }else{
+                document.write("숫자 입니다.")
+            }
+        }
+        document.write(input);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
