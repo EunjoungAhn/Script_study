@@ -1,1 +1,1 @@
-# Script_study
+# 자기소개
